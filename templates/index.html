@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,12 +22,10 @@
     <meta property="og:title" content="Onnuri | 온누리 지류 상품권"/>
     <meta property="og:description" content="온누리 지류 상품권 사용 관련 안내 사이트입니다."/>
     <meta property="og:image" content="{{ url_for('static', filename='ogimage.jpg') }}"/>
-
 </head>
 
 <body>
-
-<header>
+    <header>
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
         <a class="navbar-brand" href="#">Onnuri</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
@@ -53,175 +52,183 @@
         </form>
     </nav>
 </header>
-
-<main role="main">
-
-<div id="myCarousel" class="carousel-slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="first-slide"
-                     src="/static/sample-map.jpg"
-                     alt="First slide">
-                <div class="container">
-                    <div class="carousel-caption text-left">
-                        <h1>온누리상품권(종이) 사용처 지도</h1>
-                        <p>보기 어려웠던 온라인 상품권 사용처, 이제는 주변의 사용처를 지도로 보기 쉽게 조회하세요!</p>
-                        <p><a class="btn btn-lg btn-primary" href="sub_search_map.html" role="button">지도 바로가기</a></p>
+    <main role="main">
+        <div id="myCarousel" class="carousel-slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="first-slide"
+                         src="/static/sample-map.jpg"
+                         alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption text-left">
+                            <h1>온누리상품권(종이) 사용처 지도</h1>
+                            <p>보기 어려웠던 온라인 상품권 사용처, 이제는 주변의 사용처를 지도로 보기 쉽게 조회하세요!</p>
+                            <p><a class="btn btn-lg btn-primary" href="sub_search_map.html" role="button">지도 바로가기</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="second-slide"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                         alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Another example headline.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="third-slide"
+                         src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                         alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption text-right">
+                            <h1>One more for good measure.</h1>
+                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
+                                gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                            <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img class="second-slide"
-                     src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                     alt="Second slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Another example headline.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <img class="third-slide"
-                     src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-                     alt="Third slide">
-                <div class="container">
-                    <div class="carousel-caption text-right">
-                        <h1>One more for good measure.</h1>
-                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                            gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
-                    </div>
-                </div>
-            </div>
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">이전</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">다음</span>
+            </a>
         </div>
-        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">이전</span>
-        </a>
-        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">다음</span>
-        </a>
-    </div>
+
+        <!-- Marketing messaging and featurettes
+        ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <div class="container marketing">
+            <!-- four columns of text below the carousel -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <img class="rounded-circle"
+                         src="/static/entire.png"
+                         alt="Generic placeholder image" width="140" height="140">
+                    <h2>전체 상점 보기</h2>
+                    <p>온누리 상품권 조회가 가능한 전국 점포를 볼 수 있습니다. 원하는 점포를 검색해보세요.</p>
+                    <p><a class="btn btn-secondary" href="sub_search_market.html" role="button">바로가기 &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="rounded-circle"
+                         src="/static/store-icon.png"
+                         alt="Generic placeholder image" width="140" height="140">
+                    <h2>시장별 찾기</h2>
+                    <p>우리 집 주변 시장에서 온누리 상품권 사용처를 조회할 수 있습니다. 지역별 시장에서 사용 가능한 상점을 찾아보세요.</p>
+                    <p><a class="btn btn-secondary" href="sub_search_market.html" role="button">바로가기 &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="rounded-circle"
+                         src="/static/category-simple-icon-2.png"
+                         alt="Generic placeholder image" width="140" height="140">
+                    <h2>상점 종류별로 찾기</h2>
+                    <p>온누리상품권은 시장 내 신선식품 및 잡화 구매 외에도 음식점, 슈퍼마켓, 건강식품점, 잡화, 약국 등 다양한 상점에서 사용이 가능합니다. 상점 카테고리별 사용처를
+                        확인해보세요. </p>
+                    <p><a class="btn btn-secondary" href="sub_search_types.html" role="button">바로가기 &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+                <div class="col-lg-4">
+                    <img class="rounded-circle"
+                         src="/static/map.png"
+                         alt="Generic placeholder image" width="140" height="140">
+                    <h2>지도에서 찾기</h2>
+                    <p>현위치에서 가장 가까운 상점들을 조회할 수 있습니다. 한 눈에 사용처들을 확인하고 가까운 사용처를 이용할 수 있습니다.</p>
+                    <p><a class="btn btn-secondary" href="sub_search_map.html" role="button">바로가기 &raquo;</a></p>
+                </div><!-- /.col-lg-4 -->
+            </div><!-- /.row -->
+
+            <br><br><br><br>
+
+            <!-- START THE FEATURETTES -->
+            <br><br>
+
+            <hr class="featurette-divider">
+            <h5 class="related-site-text">유관 사이트 바로가기</h5>
+            <br><br>
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">온누리 상품권이란?</h2>
+                    <p class="lead">온누리 상품권은 지역경제와 전통시장을 살리기 위해 발행한 상품권이며, 전통시장 및 상점가 등에서 현금처럼 사용하실 수 있습니다. 또, 현금영수증 발행시
+                        소득공제 40% 혜택도 받으실 수 있습니다.</p>
+                    <p><a class="btn btn-secondary"
+                          href="https://www.sbiz.or.kr/sijangtong/nation/cms/readAction.do?menu_id=070100" target="_blank"
+                          role="button">자세히 보기 &raquo;</a></p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" src="/static/onnuri-desc.jpg"
+                         alt="Generic placeholder image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="featurette-heading">온누리 상품권 구매</h2>
+                    <p class="lead">온누리 상품권은 온라인, 오프라인, 모바일로 구매 및 사용 가능합니다. 지류
+                        온누리 상품권은 구매한도 50만원 내에서 5% 할인된 가격으로 구매 가능합니다.</p>
+                    <p><a class="btn btn-secondary" href="https://www.sbiz.or.kr/sijangtong/nation/onnuri/onnuriBuyList.do?menu_id=070900" target="_blank" role="button">구매지점 찾기 &raquo;</a></p>
+
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img class="featurette-image img-fluid mx-auto" src="/static/related-banks.png"
+                         alt="Generic placeholder image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <div class="row featurette">
+                <div class="col-md-7">
+                    <h2 class="featurette-heading">온라인 전통시장관</h2>
+                    <p class="lead">온라인 전통시장관이란, 공단과 쇼핑몰이 협약하여 전통시장 및 상점가의 상인들이 온라인으로 판로를 확대하고, 신규고객을 발굴함으로써 매출증진에 기여하고자 개설된 온라인 쇼핑몰입니다.</p>
+                    <p><a class="btn btn-secondary" href="http://www.onnurimarket.kr/index.jsp#!/" target="_blank" role="button">바로가기 &raquo;</a></p>
+                </div>
+                <div class="col-md-5">
+                    <img class="featurette-image img-fluid mx-auto" src="/static/onnuri_market_where_to_use.png"
+                         alt="Generic placeholder image">
+                </div>
+            </div>
+
+            <hr class="featurette-divider">
+
+            <!-- /END THE FEATURETTES -->
+
+        </div><!-- /.container -->
 
 
-    <!-- Marketing messaging and featurettes
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-right"><a href="#">▲ top</a></p>
+            <p>&copy; 2022 SMJ <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
     ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-
-        <!-- Three columns of text below the carousel -->
-        <div class="row">
-            <div class="col-lg-4">
-                <img class="rounded-circle"
-                     src="/static/store-icon.png"
-                     alt="Generic placeholder image" width="140" height="140">
-                <h2>시장별 찾기</h2>
-                <p>우리 집 주변 시장에서 온누리 상품권 사용처를 조회할 수 있습니다. 지역별 시장에서 사용 가능한 상점을 찾아보세요.</p>
-                <p><a class="btn btn-secondary" href="sub_search_market.html" role="button">바로가기 &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img class="rounded-circle"
-                     src="/static/category-simple-icon-2.png"
-                     alt="Generic placeholder image" width="140" height="140">
-                <h2>상점 종류별로 찾기</h2>
-                <p>온누리상품권은 시장 내 신선식품 및 잡화 구매 외에도 음식점, 슈퍼마켓, 건강식품점, 잡화, 약국 등 다양한 상점에서 사용이 가능합니다. 상점 카테고리별 사용처를 확인해보세요. </p>
-                <p><a class="btn btn-secondary" href="sub_search_types.html" role="button">바로가기 &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-            <div class="col-lg-4">
-                <img class="rounded-circle"
-                     src="/static/map.png"
-                     alt="Generic placeholder image" width="140" height="140">
-                <h2>지도에서 찾기</h2>
-                <p>현위치에서 가장 가까운 상점들을 조회할 수 있습니다. 한 눈에 사용처들을 확인하고 가까운 사용처를 이용할 수 있습니다.</p>
-                <p><a class="btn btn-secondary" href="sub_search_map.html" role="button">바로가기 &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
-        </div><!-- /.row -->
-
-<br><br><br><br>
-
-        <!-- START THE FEATURETTES -->
-<br><br>
-
-        <hr class="featurette-divider">
-        <h5 class="related-site-text">유관 사이트 바로가기</h5>
-<br><br>
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">온누리 상품권이란?</h2>
-                <p class="lead">온누리 상품권은 지역경제와 전통시장을 살리기 위해 발행한 상품권이며, 전통시장 및 상점가 등에서 현금처럼 사용하실 수 있습니다. 또, 현금영수증 발행시
-                    소득공제 40% 혜택도 받으실 수 있습니다.</p>
-                <p><a class="btn btn-secondary" href="https://www.sbiz.or.kr/sijangtong/nation/cms/readAction.do?menu_id=070100" target="_blank" role="button">자세히 보기 &raquo;</a></p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" src="/static/onnuri-desc.jpg"
-                     alt="Generic placeholder image">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading">온누리 상품권 구매</h2>
-                <p class="lead">온누리 상품권은 온라인, 오프라인, 모바일로 구매 및 사용 가능합니다. 지류
-                    온누리 상품권은 구매한도 50만원 내에서 5% 할인된 가격으로 구매 가능합니다.</p>
-                <p><a class="btn btn-secondary" href="https://www.sbiz.or.kr/sijangtong/nation/onnuri/onnuriBuyList.do?menu_id=070900" target="_blank" role="button">구매지점 찾기 &raquo;</a></p>
-
-            </div>
-            <div class="col-md-5 order-md-1">
-                <img class="featurette-image img-fluid mx-auto" src="/static/related-banks.png"
-                     alt="Generic placeholder image">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">온라인 전통시장관</h2>
-                <p class="lead">온라인 전통시장관이란, 공단과 쇼핑몰이 협약하여 전통시장 및 상점가의 상인들이 온라인으로 판로를 확대하고, 신규고객을 발굴함으로써 매출증진에 기여하고자 개설된 온라인 쇼핑몰입니다.</p>
-                <p><a class="btn btn-secondary" href="http://www.onnurimarket.kr/index.jsp#!/" target="_blank" role="button">바로가기 &raquo;</a></p>
-            </div>
-            <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" src="/static/onnuri_market_where_to_use.png"
-                     alt="Generic placeholder image">
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
-
-    </div><!-- /.container -->
-
-
-    <!-- FOOTER -->
-    <footer class="container">
-        <p class="float-right"><a href="#">▲ top</a></p>
-        <p>&copy; 2022 SMJ <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-    </footer>
-</main>
-
-<!-- Bootstrap core JavaScript
-================================================== -->
-<!-- Placed at the end of the document so the pages load faster -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-<!-- Just to make our placeholder images work. Don't actually copy the next line! -->
-<script src="../../assets/js/vendor/holder.min.js"></script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../../assets/js/vendor/holder.min.js"></script>
 </body>
+
 </html>
