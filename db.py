@@ -13,7 +13,7 @@ db = client.dbsparta
 import requests
 
 # 1. requests 모듈로 데이터 다운받기
-url = "https://api.odcloud.kr/api/15091227/v1/uddi:7bb1c1cc-e981-4c40-8aa4-98faca6ac4e5?page=1&perPage=5000&serviceKey=9IPRj2vLkz61h4nyu7t%2Fddu%2B0LZpU99syl48WGu21Y03O497XULBUGf3OypwwwiYUacDVgS%2FLBNA2Bf3lGvcmw%3D%3D"
+url = "https://api.odcloud.kr/api/15091227/v1/uddi:7bb1c1cc-e981-4c40-8aa4-98faca6ac4e5?page=1&perPage=10000&serviceKey=9IPRj2vLkz61h4nyu7t%2Fddu%2B0LZpU99syl48WGu21Y03O497XULBUGf3OypwwwiYUacDVgS%2FLBNA2Bf3lGvcmw%3D%3D"
 response = requests.get(url)
 parseResponse = response.json() #json 문자열을 파이썬 오브젝트(딕셔너리)로 변경
 
