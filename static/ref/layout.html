@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    include-html="/static/html/head_common.html"
+    <script>
+    <!-- 다른 html 코드가 들어가는 공간
+        -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#footer").load("/static/html/footer.html")
+            });
+
+    </script>
+    <title> *** | Onnuri : 온누리상품권(지류) 사용처 조회 서비스</title>
+</head>
+
+<body>
+    <header>{% include 'header.html' %}</header>
+
+    <!-- 다른 html 코드가 들어가는 공간
+     -->
+
+    <!-- error  <footer include-html="/static/html/footer.html"></footer> -->
+    <div id="footer"></div>
+
+    include-html="/static/html/body_common.html"
+</body>
+
+</html>

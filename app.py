@@ -15,13 +15,22 @@ db = client.dbsparta
 def home():
     return render_template('index.html')
 
-@app.route('/stores/list', methods=['GET'])
+@app.route('/allstores', methods=['GET'])
+def show_page():
+    return render_template('/subpage/all_stores.html')
+def show_all_stores():
+    stores = list(db.stores.find({}, {'_id':False}))
+    return jsonify({'all_stores': stores})
+
+## API 역할을 하는 부분
+
+@app.route('/abc', methods=['GET'])
 def listing():
     stores = list(db.stores.find({}, {'_id': False}))
     return jsonify({'all_stores':stores})
 
-## API 역할을 하는 부분
-@app.route('/stores', methods=['POST'])
+
+@app.route('/abc', methods=['POST'])
 def saving():
     url_receive = request.form['url_give']
     comment_receive = request.form['comment_give']
