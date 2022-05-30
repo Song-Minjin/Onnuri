@@ -16,11 +16,32 @@ def home():
     return render_template('index.html')
 
 @app.route('/allstores', methods=['GET'])
-def show_page():
+def show_all_stores_page():
     return render_template('/subpage/all_stores.html')
 def show_all_stores():
-    stores = list(db.stores.find({}, {'_id':False}))
+    stores = list(db.stores.find({}, {'_id': False}))
     return jsonify({'all_stores': stores})
+
+@app.route('/map', methods=['GET'])
+def show_map_page():
+    return render_template('/subpage/by_map.html')
+
+@app.route('/favorites', methods=['GET'])
+def show_favorites_page():
+    return render_template('/subpage/preparing_page.html')
+
+@app.route('/bymarkets', methods=['GET'])
+def show_markets_page():
+    return render_template('/subpage/preparing_page.html')
+
+@app.route('/storetypes', methods=['GET'])
+def show_store_types_page():
+    return render_template('/subpage/preparing_page.html')
+
+@app.route('/guide', methods=['GET'])
+def show_guide_page():
+    return render_template('/subpage/preparing_page.html')
+
 
 ## API 역할을 하는 부분
 

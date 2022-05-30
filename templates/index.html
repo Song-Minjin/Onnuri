@@ -28,7 +28,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-            <a class="navbar-brand" href="#">&nbsp;&nbsp;Onnuri</a>
+            <a class="navbar-brand" href="/">&nbsp;&nbsp;Onnuri</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -36,13 +36,13 @@
             <ul class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">홈 <span class="sr-only"></span></a>
+                        <a class="nav-link" href="/">홈 <span class="sr-only"></span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../templates/subpage/how_to_use.html">사용방법</a>
+                        <a class="nav-link" href="subpage/how_to_use.html">사용방법</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link disabled" href="../../templates/subpage/bookmarks.html">즐겨찾기</a>
+                        <a class="nav-link disabled" href="subpage/favorites.html">즐겨찾기</a>
                     </li>
                     </div>
                 </ul>
@@ -54,6 +54,16 @@
             </form>
         </nav>
     </header>
+
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=53ec0c5f37e8d31c47e0432046786f07"></script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(33.450701, 126.570667),
+            level: 3
+        };
+        var map = new kakao.maps.Map(container, options);
+    </script>
 
     <!-- 다른 html 코드가 들어가는 공간 -->
 
@@ -78,7 +88,7 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h2>지도에서 찾기</h2>
                         <p>현위치에서 가장 가까운 상점들을 조회할 수 있습니다. 한 눈에 사용처들을 확인하고 가까운 사용처를 이용할 수 있습니다.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">바로 가기</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="/map">바로 가기</a></p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -86,7 +96,7 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h2>즐겨찾기</h2>
                         <p>내가 자주 가는 상점, 혹은 가보고 싶은 상점을 즐겨찾기 기능을 통해 등록 및 관리할 수 있습니다.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">바로 가기</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="/favorites">바로 가기</a></p>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -94,7 +104,7 @@
                     <div class="carousel-caption d-none d-md-block">
                         <h2>어떻게 사용하나요?</h2>
                         <p>상단 바의 '사용방법' 탭을 클릭하여 자세한 내용을 확인하세요.</p>
-                        <p><a class="btn btn-lg btn-primary" href="#">바로 가기</a></p>
+                        <p><a class="btn btn-lg btn-primary" href="/guide">바로 가기</a></p>
                     </div>
                 </div>
             </div>
@@ -238,7 +248,7 @@
                          alt="Generic placeholder image" width="140" height="140">
                     <h2>지도에서 찾기</h2>
                     <p>현위치에서 가장 가까운 상점들을 조회할 수 있습니다. 한 눈에 사용처들을 확인하고 가까운 사용처를 이용할 수 있습니다.</p>
-                    <p><a class="btn btn-secondary" href="subpage/by_map.html" role="button">바로가기 &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="/map" role="button">바로가기 &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
                 <div class="col-lg-4">
                     <img class="rounded-circle"
@@ -246,7 +256,7 @@
                          alt="Generic placeholder image" width="140" height="140">
                     <h2>시장별 찾기</h2>
                     <p>우리 집 주변 시장에서 온누리 상품권 사용처를 조회할 수 있습니다. 지역별 시장에서 사용 가능한 상점을 찾아보세요.</p>
-                    <p><a class="btn btn-secondary" href="subpage/by_markets.html" role="button">바로가기 &raquo;</a></p>
+                    <p><a class="btn btn-secondary" href="/bymarkets" role="button">바로가기 &raquo;</a></p>
                 </div><!-- /.col-lg-4 -->
             </div><!-- /.row -->
             <!--
@@ -258,7 +268,7 @@
                 <p>온누리상품권은 시장 내 신선식품 및 잡화 구매 외에도 음식점, 슈퍼마켓, 건강식품점, 잡화, 약국 등 다양한 상점에서 사용이 가능합니다. 상점 카테고리별 사용처를
                     확인해보세요. </p>
                 <p><a class="btn btn-secondary" href="subpage/by_types.html" role="button">바로가기 &raquo;</a></p>
-            </div><!-- /.col-lg-4 -->
+            </div> <!- /.col-lg-4 -->
             <!-- /.row -->
 
             <br><br><br><br>
